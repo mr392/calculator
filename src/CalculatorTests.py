@@ -18,8 +18,6 @@ def csv_values(filename):
 
 
 
-
-
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
