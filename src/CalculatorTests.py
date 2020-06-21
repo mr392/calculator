@@ -41,9 +41,6 @@ class MyTestCase(unittest.TestCase):
              self.assertEqual(self.calculator.add(number['Value 1'], number['Value 2']), int(number['Result']))
              self.assertEqual(self.calculator.result, int(number['Result']))
 
-
-
-
     def test_subtract_method_calculator(self):
         subtraction_test_data = csv_values("/src/Unit Test Subtraction.csv")
 
