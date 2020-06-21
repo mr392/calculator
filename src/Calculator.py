@@ -1,3 +1,5 @@
+from math import sqrt
+
 def addition(a, b):
 
     return a + b
@@ -14,6 +16,7 @@ def division(a, b):
 def squared(a):
     return  a * a
 
+def squ
 
 
 
