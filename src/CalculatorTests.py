@@ -51,7 +51,6 @@ class MyTestCase(unittest.TestCase):
     def test_multiply_method_calculator(self):
         multiplication_test_data = csv_values("/src/Unit Test Multiplication.csv")
 
-
         for number in multiplication_test_data:
             self.assertEqual(self.calculator.multiply(int(number['Value 1']), int(number['Value 2'])), int(number['Result']))
             self.assertEqual(self.calculator.result, int(number['Result']))
