@@ -11,8 +11,8 @@ def multiplication(a, b):
 def division(a, b):
     return b / a
 
-def squared(a, b):
-    return  a ^ b
+def squared(a):
+    return  a * a
 
 
 
@@ -39,6 +39,6 @@ class Calculator:
         self.result = division(a, b)
         return self.result
 
-    def square(self, a, b):
-        self.result = squared(a, b)
+    def square(self, a):
+        self.result = squared(a)
         return self.result
