@@ -55,6 +55,13 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.multiply(int(number['Value 1']), int(number['Value 2'])), int(number['Result']))
             self.assertEqual(self.calculator.result, int(number['Result']))
 
+    def test_divide_method_calculator(self):
+        division_test_data = csv_values("/src/Unit Test Multiplication.csv")
+
+        for number in division_test_data:
+            self.assertEqual(self.calculator.divide(int(number['Value 1']), int(number['Value 2'])), int(number['Result']))
+            self.assertEqual(self.calculator.result, int(number['Result']))
+
 
 
 if __name__ == '__main__':
