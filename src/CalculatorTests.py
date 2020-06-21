@@ -1,5 +1,21 @@
 import unittest
+import csv
 from Calculator import Calculator
+
+
+data = []
+def csv_values():
+
+
+    with open("/src/Unit Test Addition.csv") as text_data:
+
+        reader = csv.DictReader(text_data, delimiter=",")
+
+        for row in reader:
+            values = data.append(row)
+
+        return data
+
 
 
 
@@ -19,9 +35,16 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_add_method_calculator(self):
+           test_data = csv_values()
 
-        self.assertEqual(self.calculator.add(2,2), 4)
-        self.assertEqual(self.calculator.result, 4)
+           for number in test_data:
+              self.assertEqual(self.calculator.add(number['Value 1'], number['Value 2']), int(number['Result']))
+           #    #self.assertEqual(self.calculator.result, 4)
+              print (number)
+
+
+
+
 
     def test_subtract_method_calculator(self):
 
