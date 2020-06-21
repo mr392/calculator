@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_results_property_calculator(self):
         calculator = Calculator()
-        self.assertEqual(calculator.result, 4)
+        self.assertEqual(calculator.result, 0)
 
 
     def test_add_method_calculatoe(self):
