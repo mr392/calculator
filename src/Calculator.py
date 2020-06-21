@@ -16,7 +16,8 @@ def division(a, b):
 def squared(a):
     return  a * a
 
-def squ
+def square_root_of_number(a):
+    return sqrt(a)
 
 
 
@@ -44,4 +45,8 @@ class Calculator:
 
     def square(self, a):
         self.result = squared(a)
+        return self.result
+
+    def square_root(self, a):
+        self.result = square_root_of_number(a)
         return self.result

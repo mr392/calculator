@@ -69,6 +69,14 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.square(int(number['Value 1'])), int(number['Result']))
             self.assertEqual(self.calculator.result, int(number['Result']))
 
+    def test_square_root_method_calculator(self):
+        square_root_test_data = csv_values("/src/Unit Test Square Root.csv")
+
+        for number in square_root_test_data:
+            self.assertAlmostEqual(self.calculator.square_root(float(number['Value 1'])), float(number['Result']))
+            self.assertAlmostEqual(self.calculator.result, float(number['Result']))
+
+
 
 if __name__ == '__main__':
    unittest.main()
