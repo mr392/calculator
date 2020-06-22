@@ -1,13 +1,6 @@
 from math import sqrt
 
 
-
-
-
-
-
-
-
 class Calculator:
     result = 0
 
