@@ -1,8 +1,7 @@
 from math import sqrt
 
-def addition(a, b):
 
-    return a + b
+
 
 def subtraction(a, b):
     return b - a
@@ -28,7 +27,7 @@ class Calculator:
         pass
 
     def add(self, a, b):
-        self.result = addition(int(a), int(b))
+        self.result = Calculator.addition(int(a), int(b))
         return self.result
 
     def subtract(self, a, b):
@@ -50,3 +49,7 @@ class Calculator:
     def square_root(self, a):
         self.result = square_root_of_number(a)
         return self.result
+
+    @staticmethod
+    def addition(a, b):
+        return a + b
