@@ -3,8 +3,6 @@ import csv
 from Calculator import Calculator
 
 
-
-
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
